@@ -78,7 +78,7 @@ a:hover{
 
 #hamburger-nav {
   display: none;
-  gap: 3.9rem;
+  gap: 3.5rem;
 
 }
 .hamburger .menu{
@@ -370,8 +370,8 @@ box-shadow: 2px 1px 5px 5px whitesmoke
   bottom: 0;
 }
 .section__pic-container{
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
 
   margin: 0 auto;
 
@@ -379,7 +379,8 @@ box-shadow: 2px 1px 5px 5px whitesmoke
 .section__pic-container img{
   width: 100%;
   height: 100%;
-  border-radius: 5rem;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 3px 3px brown;
   align-items: center;
   
   margin: 0 auto;
@@ -564,10 +565,6 @@ form{
 }
 
 
-#text-box{
-  height: 15vh;
-}
-
 
 .field label {
   display: block;
@@ -589,6 +586,10 @@ form{
   line-height: 1.5;
   font-size: 14px;
 }
+#message{
+  height: 15vh;
+  
+}
 
 input[type="submit"]:hover {
 cursor: pointer;
@@ -603,7 +604,7 @@ input[type="submit"] {
   background-color: #2ab966;
   border-radius: 5rem;
   color: #fff;
-  border: none
+  border: none;
 }
 
 /* footer-section */
@@ -703,6 +704,16 @@ section{
   article{
     font-size: 0.5rem;
   }
+  .img-container{
+  border-radius: 100%;
+   display: flex;
+width: 100%;
+height: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
   footer nav{
     height: fit-content;
     text-align: center;
