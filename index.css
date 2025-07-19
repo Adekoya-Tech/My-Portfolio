@@ -422,7 +422,7 @@ flex-wrap: wrap;
 
 .details-container{
   padding: 1.5rem;
-  width: 45%;
+  width: 48%;
   background: #fff;
   justify-content: center;
   padding: 20px 10;
@@ -662,6 +662,7 @@ footer p{
   }
   .about-containers{
     flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
