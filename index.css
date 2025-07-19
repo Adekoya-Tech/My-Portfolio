@@ -17,10 +17,17 @@ width: 100%;
   margin: 0 auto;
 
 }
+.about-item-white .text-container{
+  word-wrap: unset;
+}
+.about-item-black .text-container{
+  color: #e0e0e0;
+}
 
 html{
   scroll-behavior: smooth;
 }
+
 
 p{
   color: rgb(85, 85, 85);
@@ -78,7 +85,8 @@ a:hover{
 
 #hamburger-nav {
   display: none;
-  gap: 3.5rem;
+
+  gap: 4rem;
 
 }
 .hamburger .menu{
@@ -102,6 +110,7 @@ a:hover{
 .menu-links{
   position: absolute;
   gap: 100%;
+  width: 100%;
     background-color: rgb(231, 231, 231);
   width: fit-content;
   max-height: 0;
@@ -125,7 +134,7 @@ transition: all 0.3 ease-in-out;
 }
 
 .menu-links.open{
-  max-height:250px ;
+  max-height:350px ;
 }
 .hamburger-icon.open span:first-child{
   transform:rotate(45deg) translate(10px, 5px);
@@ -166,11 +175,11 @@ section {
 
 #profile {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding-top: 40px;
-  gap: 0rem;
+  gap: 2rem;
   height: 80vh;
 }
 .section__pic-container {
@@ -349,11 +358,10 @@ box-shadow: 2px 1px 5px 5px whitesmoke
 .front-text {
   text-align: center;
   transition: transform 2s;
-  word-wrap: normal;
 }
 .back-text {
   position: absolute;
-  bottom: -25em;
+  bottom: -28em;
   width: 75%;
   margin: 0 auto;
   color: #f8f5f0;
@@ -539,10 +547,17 @@ article .icon{
 }
 .contact-info-container{
   display: flex;
-  gap:5rem;
+  gap:1rem;
   flex-wrap: wrap;
   padding: 10px ;
 }
+#whats-app{
+  background-color: #2abb66;
+  border-radius: 100%;
+  border: 2px solid rgb(110, 197, 110);
+  color: #e0e0e0;
+}
+
 .icons{
   font-size: 2rem;
   cursor: pointer;
@@ -563,7 +578,7 @@ article .icon{
 form{
   font-family: Arial, Helvetica, sans-serif;
   background: #4460AA;
-  padding: 10px 30px;
+  padding: 10px 5px;
 
 }
 
@@ -675,6 +690,7 @@ footer p{
 }
 #hamburger-nav{
   display: flex;
+  justify-content: space-evenly;
 }
 #experience, .experience-details-container{
   margin-top: 2rem;
@@ -703,16 +719,18 @@ section{
 }
 @media screen and (max-width:600px){
   #profile{
-    height: 50vh;
+    height: 40vh;
     margin-bottom: 4rem;
   }
+  #hamburger-nav{
+  display: flex;
+gap: 5px;
+}
   article{
     font-size: 0.5rem;
   }
   .img-container{
-  border-radius: 100%;
-   display: flex;
-width: 100%;
+width: 70%;
 height: fit-content;
   margin: 0 auto;
   align-items: center;
