@@ -168,6 +168,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   padding-top: 40px;
   gap: 0rem;
   height: 80vh;
@@ -417,6 +418,7 @@ flex-wrap: wrap;
   background: #fff;
   justify-content: center;
   padding: 20px 10;
+  flex-wrap: wrap;
   border-radius: 3rem;
   border: rgb(53, 53, 53) 0.1rem solid ;
   border-color: rgb(163, 163, 163);
@@ -424,10 +426,11 @@ flex-wrap: wrap;
 }
 .details-containers{
   padding: 1.5rem;
-  width: 60%;
+  width: 90%;
   flex-wrap: wrap;
   background: #fff;
   justify-content: center;
+    flex-wrap: wrap;
   border-radius: 3rem;
   border: rgb(53, 53, 53) 0.1rem solid ;
   border-color: rgb(163, 163, 163);
@@ -441,7 +444,7 @@ flex-wrap: wrap;
 
 .section-container{
   gap: 4rem;
-  height: 80%;
+  height: 100%;
   align-items: center;
 
  
@@ -558,7 +561,7 @@ article .icon{
   font-size:2rem;  
 }
 form{
-  
+  font-family: Arial, Helvetica, sans-serif;
   background: #4460AA;
   padding: 10px 30px;
 
@@ -600,6 +603,7 @@ border: 1px solid rgb(231, 231, 231);
 input[type="submit"] {
   display: block;
   padding: 6px 30px;
+  width: 200px;
   font-size: 17px;
   background-color: #2ab966;
   border-radius: 5rem;
@@ -639,6 +643,7 @@ footer p{
   #profile{
     height: 50vh;
     margin-bottom: 6rem;
+    align-items: center;
   }
   .about-containers{
     flex-wrap: wrap;
@@ -751,7 +756,7 @@ height: fit-content;
 
   }
   .experience-sub-title{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .logo{
     font-size: 1.9rem;
@@ -766,10 +771,17 @@ height: fit-content;
     font-size: 1.23rem;
   }
   .title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .text-container{
     text-align: justify;
   }
+  .btn{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  width: 5rem;
+}
 }
 
