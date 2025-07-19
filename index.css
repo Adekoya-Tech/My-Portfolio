@@ -567,7 +567,7 @@ article .icon{
   transition: 0.5s;
   font-size:2.5rem;}
 #icons{
-  color: blue;
+  color:#1877F2;
 }
 #icons:hover{
  color:rgba(39, 117, 219, 0.89) ;
@@ -577,7 +577,7 @@ article .icon{
 }
 form{
   font-family: Arial, Helvetica, sans-serif;
-  background: #4460AA;
+  background: #4a4d3b;
   padding: 10px 5px;
 
 }
@@ -620,7 +620,7 @@ input[type="submit"] {
   padding: 6px 30px;
   width: 200px;
   font-size: 17px;
-  background-color: #2ab966;
+  background-color: #c5aa32;
   border-radius: 5rem;
   color: #fff;
   border: none;
