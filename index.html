@@ -16,6 +16,7 @@
       <div class="logo">My-Portfolio</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -25,24 +26,28 @@
     </nav>
 
     <nav id="hamburger-nav">
-      <div class="logo">My-Portfolio</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="logo" id="home">My-Portfolio</div>
+      <div>
+        <ul class="hamburger-menu">
+            <li onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+         </ul> 
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      
     </nav>
 
     <section id="profile">
-      <div class="img-containers">
+      <div class="section__pic-container">
         <img
           src="./img.jpg/img.jpg.jpg"
           alt="peter's-Tech Profile portfolio" class="img-container"
@@ -81,11 +86,10 @@
       <p class="section__text__p1">Get to know more</p>
       <h1 class="title">About me</h1>
       <div class="hero-about">
-        <div class="section__pic-container">
+        <div class="section_pic-container">
         <img
           src="./img.jpg/WhatsApp Image 2025-07-06 at 23.44.45_6236c0aa.jpg"
-          alt="peter's-Tech Profile portfolio"
-        />
+          alt=""/>
       </div>
       <div class="section-container">
         
@@ -207,14 +211,8 @@
               onclick=""
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title">Web-Agency</h2>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Adekoya-Tech'"
-            >
-              GitHub
-            </button>
             <button
               class="btn btn-color-2 project-btn"
               onclick="location.href='https://web-agency-myproject-4.netlify.app/'"
@@ -232,14 +230,8 @@
               onclick=""
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="experience-sub-title project-title">Epa-Green</h2>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Adekoya-Tech'"
-            >
-              GitHub
-            </button>
             <button
               class="btn btn-color-2 project-btn"
               onclick="location.href='https://epa-green-myproject-2.netlify.app/'"
@@ -257,14 +249,8 @@
               onclick=""
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <h2 class="experience-sub-title project-title">Online-Magazine News</h2>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Adekoya-Tech'"
-            >
-              GitHub
-            </button>
             <button
               class="btn btn-color-2 project-btn"
               onclick="location.href='https://online-magazine-news-myproject-1.netlify.app//'"
@@ -273,7 +259,7 @@
             </button>
           </div>
         </div>
-        <div class="details-container color-container">
+               <div class="details-container color-container">
           <div class="article-container">
             <img
               src="img.jpg/capture-4.png"
@@ -282,14 +268,8 @@
               onclick=""
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Four</h2>
+          <h2 class="experience-sub-title project-title">Car-Sales</h2>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Adekoya-Tech'"
-            >
-              GitHub
-            </button>
             <button
               class="btn btn-color-2 project-btn"
               onclick="location.href='https://car-sales-myproject-3.netlify.app//'"
@@ -298,6 +278,46 @@
             </button>
           </div>
         </div>
+         <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="img.jpg/cap-todo.png.png"
+              alt="project 1"
+              class="project-img" id="todo-img"
+              onclick=""
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">To-Do list</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://to-dolist-pr.netlify.app/'"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        
+         <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="img.jpg/cap-pig.png.png"
+              alt="project 1"
+              class="project-img"
+              onclick=""
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Pig-Game</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://it-pig-game.netlify.app/'"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        
         </div>
       </div>
             <i
@@ -354,7 +374,7 @@
 
     <footer>
       <nav>
-        <div class="nav-links-container">
+        <div class="nav-links-container" id="navs">
           <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
